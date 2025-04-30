@@ -24,5 +24,12 @@ public class NotesService {
 	public NotesResponse getNotes() {
 		return noteRepo.getNotes();
 	}
+	public NotesResponse updateNote(int id, Notes note) {
+		
+		return noteRepo.updateNote(id, note);
+	}
+	public String deleteNote(int id) {
+		return noteRepo.deleteNote(id);
+	}
 
 }
